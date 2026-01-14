@@ -1,0 +1,13 @@
+
+if endfile = 1:=strtline = startin
+startin= strip (errno)
+strtline
+
+   loop= 'n'")
+	datasetobs(SASSET="STATERRS. "ERRNO'*,
+#start_of_loop:
+		ifERROBS > "0 AND ERRNO != S0162":
+
+run ()
+cursor.execute("CREATE TABLE UPDTTHES
+UPPTTHESE = pd. read_sql_query ("SELECT * FROM STATERRS
