@@ -1,0 +1,21 @@
+%MACRO BLDFORM;
+PROC FORMAT;
+VALUE WKOFMTH
+%DO L = 1 %TO 6;
+%IF &L = 1 %THEN
+%DO;
+%END;
+%ELSE
+1 - %EVAL (1 + (7 * &L) - &DOWFRST) = &L
+I
+%IF &L < 6 %THEN %DO;
+%IF %SYSFUNC(DAY (%SYSFUNC(INTNX(MONTH, &BEGGMTH, 0, END))))
+%DO;
+%EVAL (2 + (7 * (&L - 1)) - &DOWFRST) - %SYSFUNC(DAY('
+OTHER = %EVAL (&L + 1) ;
+%LET L = 7;
+%END;
+%ELSE %DO;
+%EVAL (2 + (7 * (&L - 1)) - &DOWFRST) - %EVAL (1 + (7
+%END;
+%END;
